@@ -1,0 +1,22 @@
+import math
+x1=float(input("Введіть x першої точки: "))
+y1=float(input("Введіть y першої точки: "))
+x2=float(input("Введіть x другої точки: "))
+y2=float(input("Введіть y другої точки: "))
+x3=float(input("Введіть x третьої точки: "))
+y3=float(input("Введіть y третьої точки: "))
+AB=math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)))
+print("AB = {0}". format(AB))
+BC=math.sqrt(((x3-x2)*(x3-x2))+((y3-y2)*(y3-y2)))
+print("BC = {0}". format(BC))
+AC=math.sqrt(((x3-x2)*(x3-x2))+((y3-y2)*(y3-y2)))
+print("AC = {0}". format(AC))
+if AB>BC:
+max=AB
+else:
+max=BC
+if max>AC:
+max=max
+else:
+max=AC
+print("Найбільша сторона = {0}". format(max))

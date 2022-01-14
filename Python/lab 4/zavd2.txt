@@ -1,0 +1,14 @@
+import math
+a=float(input("Введіть перше число: "))
+b=float(input("Введіть друге число: "))
+c=float(input("Введіть третє число: "))
+if a>b:
+min=b
+else:
+min=a
+if b>c:
+max=b
+else:
+max=c
+sum=(min+(max))*(min+(max))
+print("Сума = {0}". format(sum))
